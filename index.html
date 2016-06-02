@@ -1,18 +1,18 @@
 <link rel="stylesheet" type="text/css" href="http://app.klipse.tech/css/codemirror.css">
+<style>
+div.CodeMirror { max-height: 10em;
+                 overflow-y: scroll; }
+</style>
 
 <pre><code class="language-klipse"
 src-paths="http://app.klipse.tech/fig/js,clojurescript,https://gist.githubusercontent.com,datascript/src">
+  ; Edit anything in these code boxes!
   (ns my.ns
     (:require [fasiha.gist-23e8296e65fe51a4781c473e5f04507d.raw.foo :as foo]
-              [viebel.gist-368d3bec58d3ec47e935ad488bafb600.raw.color] ; so meta!
-              [datascript.core :as d]
+              ; pulls down a gist to color the background blue! So meta!
+              [viebel.gist-368d3bec58d3ec47e935ad488bafb600.raw.color]
               ))
   (map inc [1 2 3]) ; works!
-</code></pre>
-
-<pre><code class="language-klipse">
-(def conn (d/create-conn))
-conn
 </code></pre>
 
 <pre><code class="language-klipse">
@@ -20,7 +20,7 @@ conn
 </code></pre>
 
 <pre><code class="language-klipse">
-  (str foo/testing) ; amazing!
+  (str foo/testing) ; this variable was loaded from another gist!
 </code></pre>
 
 <script>
