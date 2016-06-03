@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="http://app.klipse.tech/css/codemirror.css">
 <style>
-div.CodeMirror { max-height: 10em;
+div.CodeMirror { max-height: 20em;
                  overflow-y: scroll; }
 </style>
 
@@ -11,6 +11,7 @@ src-paths="http://app.klipse.tech/fig/js,clojurescript,https://gist.githubuserco
     (:require [fasiha.gist-23e8296e65fe51a4781c473e5f04507d.raw.foo :as foo]
               ; pulls down a gist to color the background blue! So meta!
               [viebel.gist-368d3bec58d3ec47e935ad488bafb600.raw.color]
+              [datascript.core :as d]
               ))
   (map inc [1 2 3]) ; works!
 </code></pre>
